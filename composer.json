@@ -1,0 +1,19 @@
+{
+    "name": "themitope/superban",
+    "description": "This package bans a user completely for a period of time",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Themitope\\Superban\\": "src/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "themitope",
+            "email": "ogunleyeoluwatosin2014@gmail.com"
+        }
+    ],
+    "require": {}
+}
