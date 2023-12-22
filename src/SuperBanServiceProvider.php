@@ -15,10 +15,6 @@ class SuperBanServiceProvider extends ServiceProvider
     {
         // Register middleware
         $this->app['router']->aliasMiddleware('superban', SuperBanMiddleware::class);
-
-        $this->publishes([
-            __DIR__.'/config/superban.php' => config_path('superban.php'),
-        ], 'superban');
     }
 
     /**
@@ -26,9 +22,5 @@ class SuperBanServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Merge default config from the package
-        $this->mergeConfigFrom(
-            __DIR__.'/config/superban.php', 'superban'
-        );
     }
 }

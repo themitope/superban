@@ -32,6 +32,6 @@ class SuperBanException extends Exception
      */
     public function render()
     {
-        return response()->json(["error" => true, "message" => $this->getMessage()]);
+        return response()->json(["error" => true, "message" => $this->getMessage()], $this->getCode());
     }
 }

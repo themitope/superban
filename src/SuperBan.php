@@ -54,13 +54,4 @@ final class SuperBan
     {
         return Cache::has($banKey);
     }
-
-    /**
-     * Unban user after the number of ban duration has lasped
-     */
-    public function unBan($key)
-    {
-        $banKey = "superban:ban:{$key}";
-        Cache::forget($banKey);
-    }
 }

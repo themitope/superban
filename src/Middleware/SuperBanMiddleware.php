@@ -33,12 +33,12 @@ class SuperBanMiddleware
         $banKey = "superban:ban:{$key}";
 
         if ($this->limiter->isBanned($key)) {
-            throw new SuperBanException("You are banned", Response::HTTP_FORBIDDEN);
+            throw new SuperBanException('You are banned', Response::HTTP_FORBIDDEN);
         }
 
         if ($this->limiter->tooManyAttempts($key, $noOfRequests)) {
             $this->limiter->banClient($banKey, $banDuration);
-            throw new SuperBanException("Too many requests");
+            throw new SuperBanException('Too many requests, you have been banned');
         }
 
         $this->limiter->hit($key, $decayMinutes);
