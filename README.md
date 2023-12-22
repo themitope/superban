@@ -29,9 +29,9 @@ If your cache driver is database, the followings keys should be present in your 
 ```
 If your cache driver is redis, the followings keys should be present in your ```.env``` file with their corresponding values.
 ```bash
-    REDIS_HOST=127.0.0.1
-    REDIS_PASSWORD=null
-    REDIS_PORT=6379
+    REDIS_HOST=
+    REDIS_PASSWORD=
+    REDIS_PORT=
 ```
 
 ## Usage/Examples
