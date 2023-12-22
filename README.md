@@ -9,7 +9,7 @@ A package that contains a middlware which has the ability to ban client complete
 superban can be installed with composer
 
 ```bash
-  composer required themitope/superban
+  composer require themitope/superban
 ```
 For Laravel 5.5 and above, the package will automatically register provider.
 
